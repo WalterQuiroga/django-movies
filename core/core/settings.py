@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     'rest_framework',
 
     # customs apps    
-    'movies'
+    'movies',
+    'reviews',
 ]
 
 MIDDLEWARE = [
