@@ -1,5 +1,5 @@
 from django.http import JsonResponse
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import get_object_or_404, render
 
 from rest_framework import status
 from rest_framework.views import APIView
@@ -46,7 +46,7 @@ class MovieView(APIView):
         
 
     
-    def delete(self, request, pk = None):
+    def delete(self, request, pk_review = None):
         if pk:
             movie = get_object_or_404(Movie, pk=pk)
             movie.delete()
